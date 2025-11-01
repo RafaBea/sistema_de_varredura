@@ -66,9 +66,28 @@ int main(void) {
 
 `!./sistema_varredura`
  
- ---
+---
+## Como rodar em outro compilador ou editor
 
-O ssistema vai ler o arquivo exemplo.c e exibir os tokens encontrados.
+Usando um compilador normal, como GCC ou MinGW, o processo é simples:
+
+1. **Certifique-se de que os arquivos estão no mesmo diretório**:  
+   - `sistema_varredura.c` → código do scanner  
+   - `exemplo.c` → código-fonte que será analisado  
+
+2. Abra o terminal ou prompt de comando e navegue até o diretório onde estão os arquivos.
+
+3. Compile o scanner normalmente
+
+```bash
+gcc sistema_varredura.c -o sistema_varredura
+
+```
+
+4. Ou rode direto em um editor compatível com C, como DevC++ ou Visual Studio, que já possuem um compilador para C.
+
+---
+O sistema vai ler o arquivo exemplo.c e exibir os tokens encontrados.
 
 No exemplo, identifica palavras reservadas (int, if, else, return), identificadores (x), números (10, 5, 1), símbolos (=, +, -, ;, {, }).
 
